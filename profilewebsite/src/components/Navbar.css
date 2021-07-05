@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*
+{
+    padding:0;
+    margin: 0;
+   /* box-sizing: border-box; */
+}
+.nav-menu
+{
+    background-color: rgba(27, 37, 39, 0.70);
+    /* background: radial-gradient(rgba(27, 37, 39, 0.90), rgba(27, 37, 39, 0) ); */
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.nav-text
+{
+    list-style: none;
+}
+.active-nav-text
+{
+    background-color:rgba(63, 75, 78, 0.70);
+    color: rgba(27, 37, 39);
+
+    text-decoration: none;
+}
+.nav-text a
+{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    color: rgb(230, 240, 243);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+   
+}
+.nav-text a:hover
+{
+    background-color:rgba(63, 75, 78, 0.70);
+
+}
+.nav-menu-items
+{
+    height: min-content;
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
