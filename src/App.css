@@ -98,7 +98,7 @@
 
     border-width: 0;
 
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 300;
     font-family: 'Playfair Display', serif;
     color: rgb(230, 240, 243);
@@ -143,7 +143,7 @@
 {
     color:rgb(27, 30, 31);
     font-family: 'Playfair Display', serif;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: 500;
    /* font-weight: 700; */
 
@@ -152,6 +152,8 @@
     padding-top: 5px;
     padding-bottom: 15px;
 
+    margin-bottom: 10px;
+
     background-color:rgba(49, 78, 60, 0.562);
     border-radius: 5px;
 }
@@ -159,7 +161,7 @@
 {
     color:rgb(27, 30, 31);
     font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
+    font-size: 1.1vw;
     padding-bottom: 15px;
 }
 .RSA-Overview-Diagram-Container
@@ -221,6 +223,7 @@
     height: 100%;
     width: 100%;
     background:rgb(240, 222, 198);
+
 }
 .react-example-container
 {
@@ -233,39 +236,13 @@
     width: 100%;
 }
 
-
-
-.test2
-{
-    height: 50%;
-    width: 50%;
-    background-color: rgb(126, 128, 0);
-}
-.test3
-{
-    height: 50%;
-    width: 50%;
-    background-color: rgb(92, 0, 128);
-}
-.test4
-{
-    height: 50%;
-    width: 50%;
-    background-color: rgb(128, 41, 0);
-}
-
-
-
-
-
-
 .wrapper
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 653vh;
+    height: 650vh;
 
     overflow:hidden;
 }
@@ -298,26 +275,28 @@
 }
 .header-content-lineOne
 {
-    padding-top: 10%;
+    padding-top: 11%;
     padding-bottom: 0.8%;
     letter-spacing: 2px;
     color:rgba(230, 240, 243, 1);
-    font-size: 1.3em;
+    font-size: 1.3vw;
     font-family: 'Playfair Display', serif;
     letter-spacing: 5px;
+    font-weight: 100;
 }
 .header-content-lineTwo
 {
     color: rgba(230, 240, 243, 1);
-    font-size: 2.2em;
+    font-size: 2.5vw;
     padding-bottom: 0.8%;
     font-family: 'Playfair Display', serif;
     letter-spacing: 5px;
+    font-weight: 100;
 }
 .header-content-lineThree
 {
     color: rgba(230, 240, 243, 1);
-    font-size: 4em;
+    font-size: 5vw;
     font-family: 'Playfair Display', serif;
     letter-spacing: 5px;
     font-weight: 100;
@@ -350,6 +329,7 @@
     /* 199, 189, 185 */
     border-radius: 5px;
     box-shadow: 5px 5px 1px rgba(27, 37, 39, 0.6);
+
 }
 .face-container
 {
@@ -378,7 +358,7 @@
 .bio-header
 {
     color:rgb(35, 44, 46);
-    font-size: 30px;
+    font-size: 2.5vw;
     font-family: 'Playfair Display', serif;
     font-weight: 500;
 
@@ -387,7 +367,7 @@
 .bio-body
 {
     color: rgba(35, 44, 46);
-    font-size: 18px;
+    font-size: 1.1vw;
     font-family: 'Open Sans', sans-serif;
     padding-top: 15px;
     line-height: 25px;
@@ -452,7 +432,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-
     
 }
 .projects-page-header-container
@@ -472,7 +451,7 @@
    /* height: min-content;
     width: min-content; */
     font-family: 'Playfair Display', serif;
-    font-size: 2em;
+    font-size: 2vw;
     letter-spacing: 3px;
     font-weight: 100;
     color: rgba(248, 243, 240);
@@ -524,12 +503,12 @@
 {
     color:rgb(27, 30, 31);
     font-family: 'Playfair Display', serif;
-    font-size: 22px;
+    font-size: 1.3vw;
     font-weight: 500;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
 
     background-color:rgba(49, 78, 60, 0.562);
 }
@@ -537,7 +516,7 @@
 {
     color:rgb(27, 30, 31);
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 1vw;
 }
 .projects-page-menu-container
 {
@@ -562,16 +541,9 @@
     justify-content: center;
     align-content: center;
 
-    /*padding-top: 100px; */
     padding-top: 100px;
-   /* padding-bottom: 50px; */
-   /* padding-left: 40px;
-    padding-right: 40px; */
-
+ 
     background-color: rgb(240, 222, 198);
-    /* 240, 222, 198 */
-    /* 65, 55, 62
-    /* 145, 107, 100 */
 }
 .projects-page-button-list
 {
@@ -643,21 +615,9 @@
     width: 100%;
     
     background-color: rgb(240, 222, 198);
-    /* 150, 119, 113 */
-    /* 145, 107, 100 */
+
 }
 
-.hide-project
-{
-    position: relative;
-    top: 0;
-    left:100%;
-    height: 100vh;
-    width: 100%;
-
-
-    background-color: sandybrown;
-}
 .resume-header-wrapper
 {
     position: relative;
@@ -689,6 +649,7 @@
     padding-left: 40px;
 
     background-color: rgb(240, 222, 198);
+
 }
 .resume-container
 {
@@ -708,7 +669,7 @@
 .resume-header
 {
     font-family: 'Playfair Display', serif;
-    font-size: 2em;
+    font-size: 2vw;
     letter-spacing: 3px;
     font-weight: 100;
     color: rgba(248, 243, 240);
