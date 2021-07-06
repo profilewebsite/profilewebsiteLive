@@ -244,7 +244,7 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: calc(min-content + 100vh);
+    height: 660vh;
 }
 .header-background
 {
