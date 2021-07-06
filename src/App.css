@@ -485,6 +485,7 @@
     top: 70%;
 
     height: 30%;
+    min-height: min-content;
     width: 100%;
 
     display: flex;
