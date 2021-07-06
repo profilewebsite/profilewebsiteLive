@@ -110,7 +110,7 @@
 .RSA-Overview
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-start;
    /* flex-wrap: wrap; */
   /*  padding-left: 10px;
@@ -124,6 +124,7 @@
 .RSA-Overview-Intro
 {
     height: min-content;
+    min-height: 40%;
     width: 30%;
    /* margin-right: 2%;
     margin-bottom: 2%; */
@@ -133,7 +134,8 @@
     justify-content: flex-start;
     align-content: center;
 
-    padding: 0.5%;/* padding: 15px; */
+    padding: 1%;/* padding: 15px; */
+    margin-left: 15px;
 
 
     border-radius: 5px;
@@ -150,8 +152,8 @@
 
     text-align: center;
 
-    padding-top: 0.5%; /* 5px */
-    padding-bottom: 1%; /* 15px */
+    padding-top: 1%; /* 5px */
+    padding-bottom: 1.5%; /* 15px */
 
     margin-bottom: 1%; /* 10px */
 
@@ -168,10 +170,12 @@
 .RSA-Overview-Diagram-Container
 {
     height: min-content;
+    max-height: 95%;
     width: 65%; /* 65% */
     min-width: min-content;
 
     padding: 1%; /*15px */
+    margin-left: 15px;
 
     display: flex;
     flex-direction: column;
