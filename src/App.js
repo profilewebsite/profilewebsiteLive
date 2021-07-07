@@ -9,7 +9,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 
-import someguys from './assets/someguys.jpg';
+import someguys from './assets/face.jpeg';
 import pouringCoffee from './assets/pour7.jpg'; /* 4 */
 import diagram from './assets/Diagram.svg';
 import public_key from './assets/Public_Key.svg';
