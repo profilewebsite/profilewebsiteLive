@@ -14,7 +14,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     display: flex;
     justify-content: center;
 }
@@ -24,8 +24,8 @@
 }
 .active-nav-text
 {
-    background-color:rgba(63, 75, 78, 0.70);
-    color: rgba(27, 37, 39);
+    background-color:rgba(27, 37, 39, 1);
+    color: rgb(230, 240, 243);
 
     text-decoration: none;
 }
@@ -48,7 +48,8 @@
 }
 .nav-text a:hover
 {
-    background-color:rgba(63, 75, 78, 0.70);
+    background-color:rgba(27, 37, 39, 1);
+    color: rgb(230, 240, 243);
 
 }
 .nav-menu-items
