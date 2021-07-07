@@ -47,7 +47,7 @@ function Page1()
                     hashing algorithm have also been implemented using C++.
                 </p>
             </div>
-            <div className='Diagram-Panel'>
+            <div className='RSA-Diagram-Panel'>
                 <h1 className='Project-Page-Header'>
                     The RSA Public-Key Encryption Scheme
                 </h1>
@@ -139,7 +139,7 @@ function Page3()
                     I had previously implemented. 
                 </p>
             </div>
-            <div className='Diagram-Panel'>
+            <div className='RSA-Diagram-Panel'>
                 <h1 className='Project-Page-Header'>
                     The Structure Of OAEP
                 </h1>
@@ -187,7 +187,7 @@ function Page4()
                     and repurposed implementation of RSA, OAEP, and MD5. 
                     </p>
                 </div>
-                <div className='Diagram-Panel'>
+                <div className='RSA-Diagram-Panel'>
                     <h1 className='Project-Page-Header'>
                         Abstraction At Work
                     </h1>
@@ -465,8 +465,8 @@ function App()
                 </h3>
             </div>
 
-            <div id='/andrew' className='wrapper'>
-                    <div  className='body-wrapper'>
+            <div className='wrapper'>
+                    <div id='/andrew' className='body-wrapper'>
                         <div className='face-container'>
                             <img className='face-image' src = {someguys} alt="" />
                         </div>

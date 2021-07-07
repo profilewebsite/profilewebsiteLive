@@ -135,10 +135,28 @@
     font-size: 17px;
     padding-top: 20px; /* 15px */
 }
-.Diagram-Panel
+.RSA-Diagram-Panel
 {
     height: min-content;
     max-height: 850px;
+    width: 500px; /* 65% */
+
+    padding: 1%; /*15px */
+    margin-right: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    box-shadow: 5px 5px 1px rgba(27, 37, 39, 0.6);
+    background:rgb(250, 248, 242);
+    border-radius: 5px;
+}
+.Diagram-Panel
+{
+    height: min-content;
+    max-height: 890px;
     width: 585px; /* 65% */
 
     padding: 1%; /*15px */
@@ -430,7 +448,7 @@
     font-size: 25px;
     letter-spacing: 3px;
     font-weight: 100;
-    color: rgba(248, 243, 240);
+    color: rgb(230, 240, 243); 
     /* filter: drop-shadow(5px 5px 3px rgba(27, 37, 39, 0.6)); */
     background-color: rgb(63, 75, 78);
     border-radius: 5px;
@@ -606,7 +624,7 @@
 .project
 {
     height: 100%;
-    width: 100%;
+    width: 1200px;
 
     display: flex;
     justify-content: center;
@@ -674,7 +692,7 @@
     font-size: 25px;
     letter-spacing: 3px;
     font-weight: 100;
-    color: rgba(248, 243, 240);
+    color: rgb(230, 240, 243);
    
 }
 .resume-image-container
