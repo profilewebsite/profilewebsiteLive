@@ -507,7 +507,7 @@ function App()
                         <div className='projects-page-button-container'>
                             <ul className='projects-page-button-list'>
                                 <li className='projects-page-button-list-item'>
-                                    <div className='project-panel-container'>
+                                   <div className='project-panel-container'>
                                         <button className='projects-page-button' >
                                             <Link 
                                                 to='project' 
@@ -528,7 +528,7 @@ function App()
                                             </div>
                                             </Link>
                                         </button>
-                                    </div>
+                                   </div>
                                 </li>
                                 <li className='projects-page-button-list-item'>
                                     <div className='project-panel-container'>
