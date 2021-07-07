@@ -27,8 +27,8 @@ function Page1()
 {
     return (
         <>
-        <div className='RSA-Overview'>
-            <div className='RSA-Overview-Intro'>
+        <div className='RSA-project-container'>
+            <div className='Intro-project-panel'>
                 <h1 className='Project-Page-Header'>
                     RSA Can Be Cracked In Miliseconds
                 </h1>
@@ -47,7 +47,7 @@ function Page1()
                     hashing algorithm have also been implemented using C++.
                 </p>
             </div>
-            <div className='RSA-Overview-Diagram-Container'>
+            <div className='Diagram-Panel'>
                 <h1 className='Project-Page-Header'>
                     The RSA Public-Key Encryption Scheme
                 </h1>
@@ -62,8 +62,8 @@ function Page1()
                     the message using Bob’s public key. Bob would then use his private key
                     to decrypt Alice’s message.
                 </p>
-                <div className='RSA-Overview-Diagram-holder'>
-                    <img src={public_key} />
+                <div className='Diagram-holder'>
+                    <img className='Diagram' src={public_key} />
                 </div>
             </div> 
         </div>
@@ -74,13 +74,13 @@ function Page2()
 {
     return (
         <>
-        <div className='RSA-Overview'>
-            <div className='RSA-Overview-Diagram-Container'>
+        <div className='RSA-project-container'>
+            <div className='Diagram-Panel'>
                 <h1 className='Project-Page-Header'>
                     How RSA is Vulnerable
                 </h1>
-                <div className='RSA-Overview-Diagram-holder'>
-                    <img src={diagram} />
+                <div className='Diagram-holder'>
+                    <img className='Diagram' src={diagram} />
                 </div>
                 <p className='Project-Page-Body'>
                     1. Unencrypted data. For this demonstration, we'll
@@ -119,8 +119,8 @@ function Page3()
 {
     return (
         <>
-        <div className='RSA-Overview'>
-            <div className='RSA-Overview-Intro'>
+        <div className='RSA-project-container'>
+            <div className='Intro-project-panel'>
                 <h1 className='Project-Page-Header'>
                     The Solution: Equally Complex Key and Plaintext
                 </h1>
@@ -139,7 +139,7 @@ function Page3()
                     I had previously implemented. 
                 </p>
             </div>
-            <div className='diagram-panel-container'>
+            <div className='Diagram-Panel'>
                 <h1 className='Project-Page-Header'>
                     The Structure Of OAEP
                 </h1>
@@ -154,8 +154,8 @@ function Page3()
                     only meant to raise the complexity of what you intend to encrypt, so it
                     should be noted that RSA encryption has not yet taken place.
                 </p>
-                <div className='diagram-image-container'>
-                    <img src={OAEPdiagram}/>
+                <div className='Diagram-holder-jpg'>
+                    <img className='Diagram' src={OAEPdiagram}/>
                 </div>
                 
             </div>
@@ -167,8 +167,8 @@ function Page4()
 {
     return (
         <>
-            <div className='RSA-Overview'>
-                <div className='RSA-Overview-Intro'>
+            <div className='RSA-project-container'>
+                <div className='Intro-project-panel'>
                     <h1 className='Project-Page-Header'>
                         Putting It All Together
                     </h1>
@@ -176,7 +176,10 @@ function Page4()
                     Special attention was paid to the abstraction and modularity design principles
                     throughout the implementation. Doing so dramatically simplified the process and
                     allowed the sucessful combination of many discretely coded components into a
-                    unified system. The logic behind OAEP can be written plainly as a list, so abstraction
+                    unified system.
+                    </p>
+                    <p className='Project-Page-Body'>
+                    The logic behind OAEP can be written plainly as a list, so abstraction
                     allowed the code to mirror the specifications. Modularity allowed for code written for
                     the hashing algorithm to be reused to implement the mask generation function. The ambition
                     and complexity of the project ensured that its successful implementation relied heavily on a
@@ -184,7 +187,7 @@ function Page4()
                     and repurposed implementation of RSA, OAEP, and MD5. 
                     </p>
                 </div>
-                <div className='diagram-panel-container'>
+                <div className='Diagram-Panel'>
                     <h1 className='Project-Page-Header'>
                         Abstraction At Work
                     </h1>
@@ -193,7 +196,7 @@ function Page4()
                     easy-to-read code. Each function within encodeBlock is deeply complex, but that complexity was again
                     abstracted within separate functions. 
                     </p>
-                    <div className='diagram-image-container'>
+                    <div className='Diagram-holder-jpg'>
                         <img src={encodeBlock}/>
                     </div>
                     <p className='Project-Page-Body'>
@@ -202,7 +205,7 @@ function Page4()
                     allows maskString to focus solely on the logic of the combination itself, while the conversions are
                     abstracted into separate functions. 
                     </p>
-                    <div className='diagram-image-container'>
+                    <div className='Diagram-holder-jpg'>
                         <img src={maskString}/>
                     </div>
                 </div>
@@ -250,7 +253,7 @@ function App()
     {
         return (
             <>
-            <div className='show-project' >
+            <div className='project' >
                 <RSANavigation />
                 <RenderPage />
             </div>
@@ -262,9 +265,9 @@ function App()
     {
         return (
             <>
-            <div className='show-project'>
-                <div className='react-project-container'>
-                    <div className='RSA-Overview-Intro'>
+            <div className='project'>
+                <div className='project-container'>
+                    <div className='Intro-project-panel'>
                         <h1 className='Project-Page-Header'>
                             Choosing A Hobby Project
                         </h1>
@@ -277,7 +280,7 @@ function App()
                             of my career.
                         </p>
                     </div>
-                    <div className='diagram-panel-container'>
+                    <div className='Diagram-Panel'>
                         <h1 className='Project-Page-Header'>
                             React.js
                         </h1>
@@ -299,8 +302,8 @@ function App()
                             of "visiblePage." React then handles displaying the new
                             page.
                         </p>
-                        <div className='react-example-container'>
-                            <img src={reactExample} className='react-example'/>
+                        <div className='Diagram-holder-jpg'>
+                            <img className='Diagram' src={reactExample}/>
                         </div>
                     </div>
                 </div>
@@ -312,9 +315,9 @@ function App()
     function Project3()
     {
         return (
-            <div className='show-project'>
-                <div className='react-project-container'>
-                    <div className='RSA-Overview-Intro'>
+            <div className='project'>
+                <div className='project-container'>
+                    <div className='Intro-project-panel'>
                         <h1 className='Project-Page-Header'>
                             A Warehouse: Solid Design And Practical Results
                         </h1>
@@ -334,7 +337,7 @@ function App()
                             management of the hierarchy of the project. 
                         </p>
                     </div>
-                    <div className='diagram-panel-container'>
+                    <div className='Diagram-Panel'>
                         <h1 className='Project-Page-Header'>
                             Warehouse Design: Brief Example
                         </h1>
@@ -350,8 +353,8 @@ function App()
                             such as individual lists of product-supplier relationships
                             or users' shopping-carts, that the warehouse system managed. 
                         </p>
-                        <div className='diagram-image-container'>
-                            <img src={warehouseDiagram}/>
+                        <div className='Diagram-holder-jpg'>
+                            <img className='Diagram' src={warehouseDiagram}/>
                         </div>
                     </div>
                 </div>
@@ -362,9 +365,9 @@ function App()
     function Project4()
     {
         return (
-            <div className='show-project'>
-                <div className='react-project-container'>
-                    <div className='RSA-Overview-Intro'>
+            <div className='project'>
+                <div className='project-container'>
+                    <div className='Intro-project-panel'>
                         <h1 className='Project-Page-Header'>
                             Login, Password Storage, And How to Attack It
                         </h1>
@@ -390,7 +393,7 @@ function App()
                             have gained a matching username-password pair. 
                         </p>
                     </div>
-                    <div className='RSA-Overview-Intro'>
+                    <div className='Intro-project-panel'>
                         <h1 className='Project-Page-Header'>
                             A Common Defense Method, And How To Attack It
                         </h1>
@@ -423,22 +426,22 @@ function App()
             <div className='RSANavigation-container'>
                 <ul className='RSANavigation-list'>
                     <li className='RSANavigation-list-item'>
-                        <button className='RSANavigation-list-item-button' onClick={() => setVisiblePage(0)}>
+                        <button className={visiblePage === 0 ? 'RSANavigation-list-item-button-active' : 'RSANavigation-list-item-button'} onClick={() => setVisiblePage(0)}>
                             Overview
                         </button>
                     </li>
                     <li className='RSANavigation-list-item'>
-                        <button className='RSANavigation-list-item-button' onClick={() => setVisiblePage(1)}>
+                        <button className={visiblePage === 1 ? 'RSANavigation-list-item-button-active' : 'RSANavigation-list-item-button'} onClick={() => setVisiblePage(1)}>
                             Vulnerability
                         </button>
                     </li>
                     <li className='RSANavigation-list-item'>
-                        <button className='RSANavigation-list-item-button' onClick={() => setVisiblePage(2)}>
+                        <button className={visiblePage === 2 ? 'RSANavigation-list-item-button-active' : 'RSANavigation-list-item-button'} onClick={() => setVisiblePage(2)}>
                             Solution
                         </button>
                     </li>
                     <li className='RSANavigation-list-item'>
-                        <button className='RSANavigation-list-item-button' onClick={() => setVisiblePage(3)}>
+                        <button className={visiblePage === 3 ? 'RSANavigation-list-item-button-active' : 'RSANavigation-list-item-button'} onClick={() => setVisiblePage(3)}>
                             Code
                         </button>
                     </li>
@@ -462,9 +465,8 @@ function App()
                 </h3>
             </div>
 
-            <div className='wrapper'>
-                <div id='/andrew' className='body-background'>
-                    <div className='body-wrapper'>
+            <div id='/andrew' className='wrapper'>
+                    <div  className='body-wrapper'>
                         <div className='face-container'>
                             <img className='face-image' src = {someguys} alt="" />
                         </div>
@@ -480,34 +482,23 @@ function App()
                             </p>
                         </div>
                     </div>
-                </div>
                 
-                <div className='projects-banner-wrapper'>
-                    <div className='projects-banner-content-wrapper'>
-                        <h1 className='projects-banner-content'>
-                            Add
-                        </h1>
-                        <h1 className='projects-banner-content'>
-                            some coffee
-                        </h1>
-                        <h1 className='projects-banner-content'>
-                            and you get....
-                        </h1>
-                    </div>
-                    <img src = {pouringCoffee} alt= 'pouring coffee' className='projects-banner-background' />
-                </div>
-
-                <div id='/projects' className='projects-page-wrapper'>
-                    {/*
-                    <div className='projects-page-header-wrapper'>
-                        <div className='projects-page-header-container'>
-                            <h1 className='projects-page-header'>
-                               My Projects
+                    <div className='projects-banner-wrapper'>
+                        <div className='projects-banner-content-wrapper'>
+                            <h1 className='projects-banner-content'>
+                                Add
+                            </h1>
+                            <h1 className='projects-banner-content'>
+                                some coffee
+                            </h1>
+                            <h1 className='projects-banner-content'>
+                                and you get....
                             </h1>
                         </div>
+                        <img src = {pouringCoffee} alt= 'pouring coffee' className='projects-banner-background' />
                     </div>
-                    */}
-                    <div className='projects-page-menu-container'>
+
+                    <div id='/projects' className='projects-page-menu-container'>
                         <div className='projects-page-header-container'>
                             <h1 className='projects-page-header'>
                                My Projects
@@ -604,9 +595,8 @@ function App()
                                                     MD5 Rainbow Attack
                                                 </h1> 
                                                 <p className='project-panel-text'>
-                                                   A system mimicing a username/password storage scheme, and
-                                                   a too designed to attack it. Cracks any dictionary
-                                                   password
+                                                   A system mimicing a username and password storage scheme, and
+                                                   a too designed to attack it.
                                                 </p>   
                                             </div>
                                             </Link>
@@ -622,15 +612,11 @@ function App()
                         in={inProp}
                         timeout={3000}
                         classNames='project-transitions'
-                        
                     >
-                        <div id='project' /*className='projects-page-project-wrapper'*/>
+                        <div className='projects-page-project-wrapper'>
                             <RenderProject />
                         </div>
                     </CSSTransition>
-
-
-                </div>
                 
                 <div className='resume-header-wrapper'>
                     <div className='projects-banner-content-wrapper'>
